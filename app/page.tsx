@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [showHeader, setShowHeader] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
-      setShowHeader(window.scrollY > 50); // show header after scrolling 50px
+      setShowHeader(window.scrollY > 50); // shows header after scrolling 50px
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -55,7 +56,24 @@ export default function Home() {
       {/* CONTENT */}
       <section className="max-w-6xl mx-auto px-6 py-24 space-y-6">
         <h1 className="text-4xl">A Bold Display of Creativity</h1>
-        <p className="">Junkanoo is a tresured Bahamian tradition.</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+          <p className="">
+            Junkanoo is a tresured Bahamian tradition. Scaling back from
+            colonial era tes tes test ettesy tes tes ets the eh e d ui. fjksh
+            hfjsk fhjsdk f fdsjkfh s fdjkshf sfhdjks f fjdkshf s fhdjsk hdfdks
+            fhdjskf sd
+          </p>
+          <div className="relative w-full max-w-md flex md:justify-end">
+            <Image
+              src="/images/float.jpeg"
+              width={500}
+              height={300}
+              alt="Junkanoo float"
+              className="fill rounded-2xl shadow-lg object-contain h-100 border border-black"
+            />
+          </div>
+        </div>
       </section>
     </>
   );
