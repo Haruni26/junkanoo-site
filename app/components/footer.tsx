@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
     <div className="bg-black">
-      <p className="text-2xl text-white text-center p-6">footer</p>
+      <p className="text-2xl text-white text-center p-6">
+        &copy; 2026 Aaron Seymour - bruh
+      </p>
     </div>
   );
 }

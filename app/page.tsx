@@ -64,10 +64,10 @@ export default function Home() {
             hfjsk fhjsdk f fdsjkfh s fdjkshf sfhdjks f fjdkshf s fhdjsk hdfdks
             fhdjskf sd
           </p>
-          <div className="relative w-full max-w-md flex md:justify-end">
+          <div className="relative w-full max-w-sm flex justify-center md:justify-end">
             <Image
               src="/images/float.jpeg"
-              width={500}
+              width={300}
               height={300}
               alt="Junkanoo float"
               className="fill rounded-2xl shadow-lg object-contain h-100 border border-black"
