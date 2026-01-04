@@ -54,25 +54,32 @@ export default function Home() {
       </section>
 
       {/* CONTENT */}
-      <section className="max-w-6xl mx-auto px-6 py-24 space-y-6">
-        <h1 className="text-4xl">A Bold Display of Creativity</h1>
+      <section className="max-w-6xl mx-auto px-6 py-24 space-y-6" id="about">
+        <h1 className="text-5xl">A Bold Display of Creativity</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
           {/* Need to finish this description */}
-          <p className="">
+          <p className="text-lg leading-relaxed">
             Junkanoo is a tresured Bahamian tradition. Scaling back from
-            colonial era tes tes test ettesy tes tes ets the eh e d ui. fjksh
-            hfjsk fhjsdk f fdsjkfh s fdjkshf sfhdjks f fjdkshf s fhdjsk hdfdks
-            fhdjskf sd
+            colonial era and having its roots across the West Indies and West
+            Africa. Colourful costumes, rhythmic music, and dance. Junkanoo is
+            truly a celebration which everyone who visits the Bahamas should
+            see.
           </p>
-          {/* Need to position image to the title */}
-          <div className="relative w-full max-w-sm flex justify-center md:justify-end">
+          <div className="flex gap-8 justify-center md:justify-center w-full max-w-sm">
             <Image
               src="/images/float.jpeg"
-              width={300}
+              width={220}
               height={300}
               alt="Junkanoo float"
-              className="fill rounded-2xl shadow-lg object-contain h-100 border border-black"
+              className="rounded-2xl shadow-lg object-cover border border-black"
+            />
+            <Image
+              src="/images/float.jpeg"
+              width={220}
+              height={300}
+              alt="Junkanoo float"
+              className="rounded-2xl shadow-lg object-cover border border-black"
             />
           </div>
         </div>
