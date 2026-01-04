@@ -35,7 +35,7 @@ export default function Home() {
       <section className="relative h-screen w-full overflow-hidden">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src=""
+          src="null" // Get an url
           autoPlay
           muted
           loop
