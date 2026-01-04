@@ -59,24 +59,25 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
           {/* Need to finish this description */}
-          <p className="text-lg leading-relaxed">
+          <p className="text-lg leading-relaxed mt-2">
             Junkanoo is a tresured Bahamian tradition. Scaling back from
             colonial era and having its roots across the West Indies and West
             Africa. Colourful costumes, rhythmic music, and dance. Junkanoo is
             truly a celebration which everyone who visits the Bahamas should
-            see.
+            see. In the Bahamas Junkanoo takes place on Boxing Day, New
+            Year&apos;s Day, and few saturdays during the summer.
           </p>
-          <div className="flex gap-8 justify-center md:justify-center w-full max-w-sm">
+          <div className="flex justify-center md:justify-center gap-4 w-full max-w-3xl mx-auto">
             <Image
               src="/images/costumes.jpeg"
-              width={220}
+              width={250}
               height={300}
-              alt="Junkanoo float"
+              alt="Two performers in costumes"
               className="rounded-2xl shadow-lg object-cover border border-black"
             />
             <Image
               src="/images/float.jpeg"
-              width={220}
+              width={250}
               height={300}
               alt="Junkanoo float"
               className="rounded-2xl shadow-lg object-cover border border-black"
