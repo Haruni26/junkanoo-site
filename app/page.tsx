@@ -68,7 +68,7 @@ export default function Home() {
           </p>
           <div className="flex gap-8 justify-center md:justify-center w-full max-w-sm">
             <Image
-              src="/images/float.jpeg"
+              src="/images/costumes.jpeg"
               width={220}
               height={300}
               alt="Junkanoo float"
