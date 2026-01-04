@@ -78,6 +78,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section
+        className="w-full bg-black rounded-t-2xl text-white py-24"
+        id="history"
+      >
+        <div className="max-w-6xl mx-auto px-6 space-y-6">
+          <h1 className="text-5xl">History of Junkanoo</h1>
+        </div>
+      </section>
     </>
   );
 }
