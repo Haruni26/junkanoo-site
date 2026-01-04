@@ -69,17 +69,10 @@ export default function Home() {
           </p>
           <div className="flex justify-center md:justify-center gap-4 w-full max-w-3xl mx-auto">
             <Image
-              src="/images/costumes.jpeg"
-              width={250}
+              src="/images/parade.jpg"
+              width={500}
               height={300}
               alt="Two performers in costumes"
-              className="rounded-2xl shadow-lg object-cover border border-black"
-            />
-            <Image
-              src="/images/float.jpeg"
-              width={250}
-              height={300}
-              alt="Junkanoo float"
               className="rounded-2xl shadow-lg object-cover border border-black"
             />
           </div>
