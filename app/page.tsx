@@ -137,7 +137,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-5xl font-black uppercase mb-8">About</h2>
           <p className="mx-auto text-xl font-medium opacity-80">
-            More than a festival, it&apos;s a feeling.
+            More than a festival
           </p>
         </div>
       </section>
