@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function Gallery() {
   const images = [
-    { src: "/images/", size: "md:col-span-2 md:row-span-2" },
+    { src: "/images/cowboyFloat.jpeg", size: "md:col-span-2 md:row-span-2" },
     { src: "/images/costumes.jpeg", size: "col-span-1" },
-    { src: "/images/", size: "col-span-1" },
-    { src: "/images/", size: "md:col-span-2" },
+    { src: "/images/brass.JPG", size: "col-span-1" },
+    { src: "/images/sunset.jpeg", size: "md:col-span-2" },
   ];
 
   return (

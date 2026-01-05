@@ -77,6 +77,22 @@ export default function Home() {
         id="about"
         className="w-full bg-yellow-500 text-black py-32 -mt-12 relative z-30 rounded-t-[3rem]"
       >
+        <div className="absolute right-0 top-0 h-full w-[320px] opacity-60 pointer-events-none">
+          <svg viewBox="0 0 200 600" fill="none" className="h-full w-full">
+            <path
+              d="M50 0 C120 120 20 220 90 340 C160 460 40 520 110 600"
+              stroke="#000000"
+              strokeWidth="14"
+              strokeLinecap="round"
+            />
+            <path
+              d="M100 0 C170 140 60 240 130 360 C200 480 80 520 150 600"
+              stroke="#4a94e8"
+              strokeWidth="10"
+              strokeLinecap="round"
+            />
+          </svg>
+        </div>
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-5xl font-black mb-8">About</h2>
           <p className="mx-auto text-xl font-medium opacity-80">
