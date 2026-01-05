@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 interface TimelineEvent {
   year: string;
@@ -22,7 +22,7 @@ const events: TimelineEvent[] = [
   {
     year: "1950s - Present",
     title: "The Modern Spectacle",
-    desc: "Junkanoo transformed into a highly organized, competitive masquerade. The introduction of cardboard and crepe paper allowed for the massive, intricate 3D costumes and brass sections seen on Bay Street today.",
+    desc: "Junkanoo transformed into a highly organized, competitive masquerade. The introduction of cardboard and crepe paper allowed for the massive, intricate 3D costumes and brass sections seen on Bay Street and Shirley Street.",
   },
 ];
 
@@ -43,11 +43,10 @@ export default function History() {
           className="mb-20 text-center md:text-left"
         >
           <h2 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-linear-to-r from-yellow-400 to-yellow-600 mb-6">
-            The Journey
+            The History
           </h2>
           <p className="text-white/60 text-lg max-w-2xl leading-relaxed">
-            A story of resilience, rhythm, and the unyielding spirit of the
-            Bahamian people.
+            A story of resilience, rhythm, and the unyielding spirit.
           </p>
         </motion.div>
 
@@ -82,7 +81,7 @@ export default function History() {
                   </div>
                 </div>
 
-                {/* Timeline Node (The Glowing Dot) */}
+                {/* Timeline Dot */}
                 <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center">
                   <div className="w-4 h-4 rounded-full bg-yellow-400 shadow-[0_0_20px_rgba(250,204,21,0.6)] z-10">
                     <div className="absolute inset-0 w-4 h-4 bg-yellow-400 rounded-full animate-ping opacity-20"></div>
