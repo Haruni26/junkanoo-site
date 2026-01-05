@@ -39,10 +39,10 @@ export default function Groups() {
         </p>{" "}
         <br />
         <a
-          href="./components/groups"
-          className="text-white hover:text-yellow-500 hover:font-bold transition-colors text-lg"
+          // href="./components/groups"
+          className="text-white hover:font-bold transition-colors text-lg"
         >
-          Learn more about them here
+          Groups page coming soon
         </a>
       </div>
     </section>

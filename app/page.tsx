@@ -15,7 +15,7 @@ export default function Home() {
       <section className="relative w-full h-screen overflow-hidden bg-black">
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/video.mp4" //Need to add video file
+          // src="/video.mp4" Need to add video file
           autoPlay
           loop
           muted
