@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import History from "./components/history";
 import Groups from "./components/groups";
@@ -28,11 +28,11 @@ export default function Home() {
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 
         ${
           showHeader
-            ? "bg-black/40 backdrop-blur-xl py-4 border border-b-white/40"
-            : "bg-transparent py-6 -translate-y-full"
+            ? "bg-black/60 backdrop-blur-xl py-4 border-b border-b-white/40"
+            : "bg-transparent py-5 -translate-y-full"
         }`}
       >
-        <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
+        <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
           <a
             href="#"
             className="text-2xl font-black tracking-tighter text-white uppercase"
@@ -86,7 +86,7 @@ export default function Home() {
           <motion.h1
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            className="text-white text-center text-5xl md:text-[8rem] font-black tracking-tighter italic"
+            className="text-white text-center text-4xl sm:text-5xl md:text-8xl font-black tracking-tighter italic leading-tight px-6"
           >
             JUNKANOO
           </motion.h1>
@@ -96,8 +96,8 @@ export default function Home() {
       {/* Opening */}
       <section className="bg-white py-32 transition-colors duration-500">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="text-5xl font-bold text-neutral-900 mb-6">
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
               A Beautiful Display of Creativity
             </h2>
             <p className="text-lg text-neutral-600 leading-relaxed mb-6">
@@ -105,7 +105,7 @@ export default function Home() {
               colonial era and having its roots across the West Indies and West
               Africa. Colourful costumes, rhythmic music, and dance.
             </p>
-            <p className="text-lg text-neutral-600leading-relaxed">
+            <p className="text-lg sm:text-md md:text-lg text-neutral-600 leading-relaxed">
               In the Bahamas, Junkanoo takes place on Boxing Day, New
               Year&apos;s Day, and during the summer heat. It is the pulse of
               the islands.
@@ -115,8 +115,8 @@ export default function Home() {
             <Image
               src="/images/float.jpeg"
               alt="Image of a Junkanoo Float"
-              height={800}
-              width={800}
+              fill
+              className="object-cover"
             />
           </div>
         </div>
