@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import History from "./components/history";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,8 +18,7 @@ export default function Home() {
 
   return (
     <>
-      {/* Updated Header */}
-      {/* Updated Header */}
+      {/* Header */}
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500
   ${
@@ -119,7 +119,7 @@ export default function Home() {
           <h1 className="text-5xl font-bold">History of Junkanoo</h1>
           <p className="mt-6 text-white/80 max-w-2xl">
             The story of Junkanoo is a story of resistance, celebration, and
-            cultural identity...
+            cultural identity.
           </p>
         </div>
       </section>
@@ -141,7 +141,7 @@ export default function Home() {
         id="about"
       >
         <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-5xl font-bold">About the Culture</h1>
+          <h1 className="text-5xl font-bold">About</h1>
           <p className="mt-6 font-medium">
             Junkanoo is more than a parade; it is the soul of the Bahamas.
           </p>
