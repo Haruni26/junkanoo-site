@@ -1,3 +1,3 @@
 export default function Groups() {
-  return <></>;
+  return <h1>test</h1>;
 }
