@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export default function Gallery() {
   const images = [
@@ -16,8 +17,9 @@ export default function Gallery() {
     >
       <div className="max-w-6xl mx-auto px-6">
         <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           className="text-5xl font-bold text-white mb-12"
         >
           Gallery
@@ -26,13 +28,26 @@ export default function Gallery() {
           {images.map((img, i) => (
             <motion.div
               key={i}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               whileHover={{ scale: 1.02 }}
-              className={`bg-white/20 rounded-3xl overflow-hidden border border-white/20 ${img.size}`}
+              transition={{ duration: 0.3, delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className={`relative bg-white/10 rounded-3xl overflow-hidden border border-white/20 ${img.size}`}
             >
-              <div className="w-full h-full flex items-center justify-center text-white/50 italic">
-                {/* Image component would go here */}
-                Image {i + 1}
-              </div>
+              {img.src !== "/images/" ? (
+                <Image
+                  src={img.src}
+                  alt={`Gallery image ${i + 1}`}
+                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-white/50 italic">
+                  Coming Soon
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
