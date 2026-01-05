@@ -12,7 +12,7 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="w-full bg-sky-500 dark:bg-sky-900 rounded-t-[3rem] py-32 -mt-12 relative z-20"
+      className="w-full bg-sky-900 rounded-t-[3rem] py-32 -mt-12 relative z-20"
     >
       <div className="max-w-6xl mx-auto px-6">
         <motion.h2

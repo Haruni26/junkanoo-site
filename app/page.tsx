@@ -21,26 +21,26 @@ export default function Home() {
   if (!mounted) return null;
 
   return (
-    <div className="min-h-screen transition-colors duration-500 dark:bg-neutral-950">
+    <div className="min-h-screen transition-colors duration-500 bg-neutral-950">
       {/* Header */}
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 
         ${
           showHeader
-            ? "bg-white/80 dark:bg-black/60 backdrop-blur-xl py-4 shadow-sm"
+            ? "bg-black/40 backdrop-blur-xl py-4 border border-b-white/40"
             : "bg-transparent py-6 -translate-y-full"
         }`}
       >
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
           <a
             href="#"
-            className="text-2xl font-black tracking-tighter text-neutral-900 dark:text-white uppercase"
+            className="text-2xl font-black tracking-tighter text-white uppercase"
           >
             Junkanoo
           </a>
 
           <nav className="flex items-center gap-8">
-            <ul className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-neutral-600 dark:text-white/70">
+            <ul className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-white">
               <li>
                 <a
                   href="#history"
@@ -126,16 +126,39 @@ export default function Home() {
 
       {/* Section Components */}
       <History />
-      <section>{/* Need to add groups section */}</section>
+      <section className="bg-gray-300 w-full rounded-t-[3rem] py-32 -mt-12 relative z-20">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="text-5xl font-bold text-black mb-12 max-w-6xl mx-auto px-6"
+        >
+          Groups
+        </motion.h2>
+        <div className="max-w-6xl mx-auto px-6 items-center">
+          <p className="text-lg text-sky-900 leading-relaxed mb-6">
+            The Valley Boys, Saxons, One Family, Roots
+          </p>
+          <p className="text-lg text-neutral-600leading-relaxed">
+            These groups and many others are what make up Junkanoo.
+          </p>{" "}
+          <br />
+          <a
+            href="./components/groups"
+            className="hover:text-yellow-500 hover:font-bold transition-colors text-lg"
+          >
+            Learn more about them here
+          </a>
+        </div>
+      </section>
       <Gallery />
 
       {/* About Section */}
       <section
         id="about"
-        className="w-full bg-yellow-400 dark:bg-yellow-500 text-black py-32 -mt-12 relative z-30 rounded-t-[3rem]"
+        className="w-full bg-yellow-500 text-black py-32 -mt-12 relative z-30 rounded-t-[3rem]"
       >
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-5xl font-black uppercase mb-8">About</h2>
+          <h2 className="text-5xl font-black mb-8">About</h2>
           <p className="mx-auto text-xl font-medium opacity-80">
             More than a festival
           </p>
