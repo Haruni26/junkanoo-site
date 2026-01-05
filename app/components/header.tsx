@@ -16,7 +16,8 @@ export default function Header() {
   if (!mounted) return null;
 
   return (
-    <div className="min-h-screen transition-colors duration-500 bg-neutral-950">
+    <>
+      {" "}
       {/* Header */}
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 
@@ -72,6 +73,6 @@ export default function Header() {
           </nav>
         </div>
       </header>
-    </div>
+    </>
   );
 }

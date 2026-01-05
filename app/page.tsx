@@ -12,13 +12,26 @@ export default function Home() {
     <div className="min-h-screen transition-colors duration-500 bg-neutral-950">
       <Header />
       {/* Video Section */}
-      <section className="relative h-[90vh] w-full overflow-hidden bg-neutral-900 mb-20">
-        <div className="absolute inset-0 bg-black/40 z-10" />
-        <div className="relative z-20 h-full flex flex-col items-center justify-center">
+      <section className="relative w-full h-screen overflow-hidden bg-black">
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/video.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Title */}
+        <div className="relative z-20 w-full h-full flex items-center justify-center">
           <motion.h1
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            className="text-white text-center text-4xl sm:text-5xl md:text-8xl font-black tracking-tighter italic leading-tight px-6"
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="text-white text-center text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter italic leading-none"
           >
             JUNKANOO
           </motion.h1>
