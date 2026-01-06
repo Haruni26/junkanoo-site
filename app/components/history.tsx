@@ -17,12 +17,12 @@ const events: TimelineEvent[] = [
   {
     year: "1834",
     title: "Post-Emancipation",
-    desc: "After slavery was abolished, Junkanoo persisted as a powerful symbol of freedom and resistance. Costumes evolved from simple sea-sponges, fabric, and leaves to more structured paper designs.",
+    desc: "After slavery was abolished Junkanoo persisted as a powerful symbol of freedom and resistance. Costumes evolved from simple sea-sponges, fabric, and leaves to more structured paper designs.",
   },
   {
     year: "1950s - Present",
     title: "Junkanoo Today",
-    desc: "Junkanoo transformed into a highly organized, competitive masquerade. The introduction of cardboard and crepe paper allowed for the massive, intricate 3D costumes and brass sections seen on Bay Street and Shirley Street.",
+    desc: "Junkanoo transformed into a highly organized and competitive show of music and dance. The introduction of cardboard, and crepe paper allowed for the massive intricate 3D costumes and brass sections seen on Bay Street and Shirley Street.",
   },
 ];
 
