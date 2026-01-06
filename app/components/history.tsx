@@ -21,7 +21,7 @@ const events: TimelineEvent[] = [
   },
   {
     year: "1950s - Present",
-    title: "The Modern Spectacle",
+    title: "Junkanoo Today",
     desc: "Junkanoo transformed into a highly organized, competitive masquerade. The introduction of cardboard and crepe paper allowed for the massive, intricate 3D costumes and brass sections seen on Bay Street and Shirley Street.",
   },
 ];

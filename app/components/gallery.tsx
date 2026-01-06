@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export default function Gallery() {
   const images = [
+    // Need to compress images for better performance and reduce data usage
     { src: "/images/cowboyFloat.jpeg", size: "md:col-span-2 md:row-span-2" },
     { src: "/images/costumes.jpeg", size: "col-span-1" },
     { src: "/images/brass.JPG", size: "col-span-1" },
