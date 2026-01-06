@@ -3,7 +3,7 @@ import Footer from "./components/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Junkanoo | Culture in Motion",
+  title: "Junkanoo | A Celebration of Bahamian Culture",
   description: "Created by Aaron Seymour",
 };
 
