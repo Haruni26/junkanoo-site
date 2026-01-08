@@ -109,8 +109,8 @@ export default function Home() {
       </section>
 
       {/* Section Components */}
-      <History />
       <Groups />
+      <History />
       <Gallery />
 
       {/* About Section */}
