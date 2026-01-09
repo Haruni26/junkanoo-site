@@ -113,8 +113,8 @@ export default function Home() {
       <History />
       <Gallery />
 
-      {/* About Section */}
-      <section
+      {/* About Section - Still a Work in progress */}
+      {/* <section
         id="about"
         className="w-full bg-yellow-500 text-black py-32 -mt-12 relative z-30 rounded-t-[3rem]"
       >
@@ -140,7 +140,7 @@ export default function Home() {
             -- Section is a work in Progress --
           </p>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
