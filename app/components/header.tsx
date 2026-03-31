@@ -39,18 +39,18 @@ export default function Header() {
             <ul className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-white">
               <li>
                 <a
-                  href="#history"
-                  className="hover:text-yellow-500 transition-colors"
-                >
-                  History
-                </a>
-              </li>
-              <li>
-                <a
                   href="#groups"
                   className="hover:text-yellow-500 transition-colors"
                 >
                   Groups
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#history"
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  History
                 </a>
               </li>
               <li>
@@ -61,14 +61,14 @@ export default function Header() {
                   Gallery
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#about"
                   className="hover:text-yellow-500 transition-colors"
                 >
                   About
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
